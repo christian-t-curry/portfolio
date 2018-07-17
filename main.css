@@ -90,7 +90,7 @@ div .section-header {
   .main-content {
     flex-direction: column;
   }
-  .main-content .right-information .section-header {
+  div .section-header {
     width: 100%;
   }
 }
