@@ -45,7 +45,7 @@ p {
   margin: 0;
 }
 
-.main-content .right-information .section-header, .main-content .left-information .section-header {
+div .section-header {
   font-weight: bold;
   letter-spacing: .05em;
   color: #EA380B;
