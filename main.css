@@ -129,7 +129,7 @@ div .section-header {
   margin-bottom: 0px
 }
 
-.main-content .right-information .section-break, .main-content .left-information .section-break {
+.section-break {
   height: 40px;
   width: 100%;
 }
