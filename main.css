@@ -12,12 +12,13 @@ h1 {
 }
 
 p {
-  font-size: 18px;
+  font-size: 20px;
   line-height: 1.6em;
   margin: 0;
 }
 
 .hero {
+  padding: 100px 0 50px 0;
 }
 
 .header {
@@ -44,7 +45,7 @@ p {
   margin: 0;
 }
 
-.main-content .right-information .section-header {
+.main-content .section-header {
   font-weight: bold;
   letter-spacing: .05em;
   color: #EA380B;
@@ -101,7 +102,7 @@ p {
     padding: 10px;
   }
   p {
-    font-size: 14px;
+    font-size: 16px;
     line-height: 1.6em;
   }
   .main-content {
@@ -110,7 +111,7 @@ p {
 }
 
 .company-name, .job-title, .job-length {
-  line-height: 1.3em;
+  line-height: 1.5em;
 }
 
 .company-name {
@@ -128,7 +129,7 @@ p {
   margin-bottom: 0px
 }
 
-.main-content .right-information .section-break {
+.main-content .section-break {
   height: 40px;
   width: 100%;
 }
