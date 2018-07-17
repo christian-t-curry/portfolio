@@ -33,6 +33,7 @@ p {
 .main-content {
   padding: 20px;
   padding-left: 40px;
+  padding-top: 50px;
   display: flex;
   background-color: #F3F3F3;
 }
@@ -103,6 +104,9 @@ p {
     font-size: 14px;
     line-height: 1.6em;
   }
+  .main-content {
+    padding-top: 20px;
+  }
 }
 
 .company-name, .job-title, .job-length {
@@ -122,4 +126,8 @@ p {
 .job-length {
   color: #B8B8B8;
   margin-bottom: 0px
+}
+
+.with-top-margin {
+  margin-top: 40px;
 }
