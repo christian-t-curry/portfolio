@@ -45,7 +45,7 @@ p {
   margin: 0;
 }
 
-.main-content .section-header {
+.main-content .right-information .section-header, .main-content .left-information .section-header {
   font-weight: bold;
   letter-spacing: .05em;
   color: #EA380B;
@@ -129,7 +129,7 @@ p {
   margin-bottom: 0px
 }
 
-.main-content .section-break {
+.main-content .right-information .section-break, .main-content .left-information .section-break {
   height: 40px;
   width: 100%;
 }
