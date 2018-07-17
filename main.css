@@ -11,10 +11,22 @@ h1 {
   color: #EA380B;
 }
 
-p {
+a {
+  color: #1D9BDA;
+  font-weight: bold;
+}
+
+p , a{
   font-size: 20px;
   line-height: 1.6em;
   margin: 0;
+  width: 100%;
+}
+
+.email {
+  line-height: 22px;
+  font-size: 20px;
+  font-weight: bold;
 }
 
 .hero {
@@ -45,12 +57,18 @@ p {
   margin: 0;
 }
 
+.main-content .right-information {
+  width: 400px;
+  padding-right: 50px;
+  margin: 0;
+}
+
 div .section-header {
   font-weight: bold;
   letter-spacing: .05em;
   color: #EA380B;
   border-bottom: 1px solid grey;
-  width: 400px;
+  width: 100%;
 }
 
 #hero-left-spacer {
@@ -90,7 +108,7 @@ div .section-header {
   .main-content {
     flex-direction: column;
   }
-  div .section-header {
+  .main-content .right-information {
     width: 100%;
   }
 }
@@ -132,4 +150,13 @@ div .section-header {
 .section-break {
   height: 40px;
   width: 100%;
+}
+
+.section-break-small {
+  height: 20px;
+  width: 100%;
+}
+
+.contact-info em {
+  font-size: 21px;
 }
