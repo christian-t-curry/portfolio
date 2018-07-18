@@ -20,10 +20,6 @@ h1 {
   line-height: 1.2em;
 }
 
-a {
-  color: #36454f;
-}
-
 p {
   font-size: 16px;
   line-height: 1.6em;
@@ -33,7 +29,9 @@ p {
 
 .email {
   color: #36454f;
-  font-weight: 100;
+  display: flex;
+  align-items: center;
+  font-weight: 500;
 }
 
 .email, .contact-info a {
@@ -90,6 +88,21 @@ div .section-header {
 #profile-pic {
   float: right;
   margin-right: 50px;
+}
+
+#social-links {
+  height: 40px;
+  display: flex;
+}
+
+#social-links img{
+  margin: 15px 15px 0 0;
+  opacity: .7;
+  width: 30px;
+}
+
+#social-links img:hover {
+  opacity: 1;
 }
 
 .hero, #content-inset {
