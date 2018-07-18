@@ -111,7 +111,7 @@ div .section-header {
 
 @media only screen and (max-width:850px) {
   #hero-left-spacer, #profile-pic {
-    margin: 50px;
+    margin:  0 50px;
   }
   .right-information, .left-information {
     margin: 50px;
@@ -124,6 +124,7 @@ div .section-header {
     flex-direction: column-reverse;
     height: 350px;
     justify-content: center;
+    align-items: center;
   }
   .hero h1 {
     font-size: 40px;
