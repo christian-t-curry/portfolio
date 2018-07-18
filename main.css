@@ -97,8 +97,9 @@ div .section-header {
 
 #social-links img{
   margin: 15px 15px 0 0;
-  opacity: .7;
+  opacity: .6;
   width: 30px;
+  transition: opacity .25s linear;
 }
 
 #social-links img:hover {
