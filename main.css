@@ -11,6 +11,12 @@ body {
   color: #36454f;
 }
 
+img {
+  margin: 0;
+  padding: 0;
+  display: block;
+}
+
 h1 {
   margin: 0;
   padding: 0;
@@ -20,8 +26,7 @@ h1 {
 }
 
 a {
-  color: #1D9BDA;
-  font-weight: bold;
+  color: #36454f;
 }
 
 p {
@@ -31,41 +36,40 @@ p {
   width: 100%;
 }
 
+.email {
+  color: #36454f;
+  font-weight: 100;
+}
+
 .email, .contact-info a {
   line-height: 1.7em;
-  font-size: 21px;
-  font-weight: bold;
+  font-size: 16px;
 }
 
 .hero {
-  padding: 100px 0 50px 0;
   min-width: 375px;
-  max-width: 1200px;
-}
-
-.header {
-  height: 80px;
-}
-
-.header #name {
- line-height: 80px;
- font-size: 18px;
- font-weight: 500;
+  display: flex;
+  flex-direction: row;
+  height: 250px;
+  align-items: center;
 }
 
 .main-content {
-  padding: 50px 50px 100px 50px;
+  width: 100%;
   display: flex;
+  flex-direction: column;
+  align-items: center;
   background-color: #F3F3F3;
 }
 
 .left-information {
   width: 60%;
-  margin-right: 50px
+  margin: 50px;
 }
 
 .right-information {
   width: 400px;
+  margin: 50px 50px 50px 0;
 }
 
 div .section-header {
@@ -78,59 +82,74 @@ div .section-header {
 }
 
 #hero-left-spacer {
-  margin: 0;
-  padding: 0;
+  margin: 0 50px;
+  font-size: 28px;
 }
 
-@media only screen and (min-width: 850px)   {
+#header {
+  height: 5px;
+  width: 100%;
+  background-color: #EA380B;
+}
+
+#profile-pic {
+  float: right;
+  margin-right: 50px;
+}
+
+.hero, #content-inset {
+  max-width: 1200px;
+  display: flex;
+}
+
+#wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media only screen and (max-width: 1200px) {
   #hero-left-spacer {
-    width: 90%;
-    font-size: 32px;
-    padding: 20px 0 20px 40px;
-  }
-  .header {
-    padding-left: 40px;
+    font-size: 22px;
   }
 }
 
-@media only screen and (max-width: 850px)   {
-  #hero-left-spacer {
-    width: 90%;
-    font-size: 24px;
-    padding: 20px 20px 20px 20px;
+@media only screen and (max-width:850px) {
+  #hero-left-spacer, #profile-pic {
+    margin: 50px;
   }
-  .header {
-    padding-left: 20px;
-    padding-right: 20px;
+  .right-information, .left-information {
+    margin: 50px;
+    width: auto;
   }
-  .main-content {
-    padding-left: 20px;
-    padding-right: 20px;
-  }
-  .main-content .left-information {
-    width: 100%;
-    margin-bottom: 50px;
-  }
-  .main-content {
+  #content-inset {
     flex-direction: column;
   }
-  .main-content .right-information {
-    width: 100%;
+  .hero {
+    flex-direction: column-reverse;
+    height: 350px;
+    justify-content: center;
+  }
+  .hero h1 {
+    font-size: 40px;
+    text-align: center;
+  }
+  #profile-pic img {
+    height: 150px;
+    clip-path: circle(70px at center);
   }
 }
 
-@media only screen and (max-width: 500px)   {
-  #hero-left-spacer {
+@media only screen and (max-width: 550px) {
+  .hero h1 {
+    font-size: 28px;
+  }
+  #hero-left-spacer, #profile-pic {
+    margin: 20px;
+  }
+  .right-information, .left-information {
+    margin: 20px;
     width: auto;
-    font-size: 19px;
-    padding: 20px;
-  }
-  p {
-    font-size: 16px;
-    line-height: 1.6em;
-  }
-  .main-content {
-    padding-top: 20px;
   }
 }
 
@@ -161,8 +180,4 @@ div .section-header {
 .section-break-small {
   height: 20px;
   width: 100%;
-}
-
-.contact-info em {
-  font-size: 21px;
 }
