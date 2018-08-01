@@ -5,6 +5,10 @@ body {
   line-height: 1.4em;
   color: #36454f;
 }
+a {
+  color: #EA380B;
+  font-weight: bold;
+}
 
 img {
   margin: 0;
